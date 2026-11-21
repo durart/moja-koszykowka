@@ -1,0 +1,14 @@
+{
+  "name": "moja-koszykowka",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Polskojęzyczna PWA do treningów koszykarskich dla zawodników i trenerów",
+  "scripts": {
+    "dev": "node server.mjs",
+    "test": "node --test tests/*.test.js",
+    "check": "node --check src/app.js && node --check src/state.js && node --check src/catalog.js && node --check src/storage.js && node --check sw.js && node --check server.mjs",
+    "build": "node scripts/build.mjs"
+  },
+  "engines": { "node": ">=20" }
+}
